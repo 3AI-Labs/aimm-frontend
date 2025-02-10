@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3AI Project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #DDF24B;
+            font-family: 'Roboto Mono', monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            padding: 20px;
+        }
+
+        .logo img {
+            max-width: 300px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            padding: 0;
+        }
+
+        .blurb {
+            max-width: 60ch;
+        }
+
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 8px;
+            justify-content: space-between;
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        .button {
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #333;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px;
+                gap: 16px;
+                text-align: left;
+            }
+
+            body {
+                height: 100dvh;
+                overflow: hidden;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 10px 16px;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./img/logo.png" alt="Logo">
+        </div>
+        <div class="title-container">
+            <h1>AiMM</h1>
+            <p class="blurb">The Ai MarketMaking framework (AiMM) is the first AI-driven market-making framework that
+                merges
+                proven technical analysis with GPT-o1 reasoning for smart trading on Solana.</p>
+        </div>
+        <div class="buttons">
+            <a href="#" class="button">CA</a>
+            <a href="https://x.com/3AIsol" class="button">X</a>
+            <a href="#" class="button">White Paper</a>
+            <a href="https://github.com/3AI-Labs" class="button">GitHub</a>
+        </div>
+    </div>
+</body>
+
+
+</html>
